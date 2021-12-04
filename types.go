@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"sort"
 	"strings"
-	"time"
 
 	"k8s.io/test-infra/prow/github"
 )
@@ -17,22 +16,22 @@ type Label struct {
 	// Name is the current name of the label
 	Name string `json:"name"`
 	// Color is rrggbb or color
-	Color string `json:"color"`
-	// Description is brief text explaining its meaning, who can apply it
-	Description string `json:"description"`
-	// Target specifies whether it targets PRs, issues or both
-	Target LabelTarget `json:"target"`
-	// ProwPlugin specifies which prow plugin add/removes this label
-	ProwPlugin string `json:"prowPlugin"`
-	// IsExternalPlugin specifies if the prow plugin is external or not
-	IsExternalPlugin bool `json:"isExternalPlugin"`
-	// AddedBy specifies whether human/munger/bot adds the label
-	AddedBy string `json:"addedBy"`
-	// Previously lists deprecated names for this label
-	Previously []Label `json:"previously,omitempty"`
-	// DeleteAfter specifies the label is retired and a safe date for deletion
-	DeleteAfter *time.Time `json:"deleteAfter,omitempty"`
-	parent      *Label     // Current name for previous labels (used internally)
+	// Color string `json:"color"`
+	// // Description is brief text explaining its meaning, who can apply it
+	// Description string `json:"description"`
+	// // Target specifies whether it targets PRs, issues or both
+	// Target LabelTarget `json:"target"`
+	// // ProwPlugin specifies which prow plugin add/removes this label
+	// ProwPlugin string `json:"prowPlugin"`
+	// // IsExternalPlugin specifies if the prow plugin is external or not
+	// IsExternalPlugin bool `json:"isExternalPlugin"`
+	// // AddedBy specifies whether human/munger/bot adds the label
+	// AddedBy string `json:"addedBy"`
+	// // Previously lists deprecated names for this label
+	// Previously []Label `json:"previously,omitempty"`
+	// // DeleteAfter specifies the label is retired and a safe date for deletion
+	// DeleteAfter *time.Time `json:"deleteAfter,omitempty"`
+	// parent      *Label     // Current name for previous labels (used internally)
 }
 
 // Configuration is a list of Repos defining Required Labels to sync into them
