@@ -60,9 +60,9 @@ type Update struct {
 }
 
 // RepoUpdates Repositories to update: map repo name --> list of Updates
-type RepoUpdates map[string][]
+type RepoUpdates map[string][]Update
 
-/// copied from generator/app.go
+// copied from generator/app.go
 
 // Person represents an individual person holding a role in a group.
 type Person struct {
