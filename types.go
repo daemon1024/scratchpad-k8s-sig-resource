@@ -94,7 +94,7 @@ type Contact struct {
 // GithubTeam represents a specific Github Team.
 type GithubTeam struct {
 	Name        string
-	Description string `yaml:",omitempty"`
+	//Description string `yaml:",omitempty"`
 }
 
 // Subproject represents a specific subproject owned by the group
@@ -180,4 +180,15 @@ type Context struct {
 	WorkingGroups []Group
 	UserGroups    []Group
 	Committees    []Group
+}
+
+
+// Team is the list it contains
+type Team struct {
+
+}
+
+// TeamList is the struct for teams in various sig folders and its teams.yaml file
+type TeamList struct {
+	Teams		   []Team
 }
