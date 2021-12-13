@@ -47,9 +47,9 @@ func main() {
 
 
 	// getting the labels from sigs.yaml and setting up the map 
-	// for _, j := range sig.Sigs {
-	// 	set[j.Label] = 1
-	// }
+	 for _, j := range sig.Sigs {
+	 	set[j.Label] = 1
+	 }
 	
 	// getting teams from sig.yaml and storing it in array
 	 for i, _ := range sig.Sigs {
