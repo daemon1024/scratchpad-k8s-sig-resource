@@ -10,7 +10,7 @@ func main() {
 	// for labels array
 	set := make(map[string]int)
 	// for teams array
-	
+	setTeam := make(map[string]int)
 
 	var arr[]string
 
@@ -37,7 +37,7 @@ func main() {
 
 	//loading individual teams
 	var teams TeamList
-	t, err := ioutil.ReadFile("sigs.yaml")
+	t, err := ioutil.ReadFile("sig-apps-teams.yaml")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -45,22 +45,30 @@ func main() {
 		log.Fatal(err)
 	}
 
+
 	// getting the labels from sigs.yaml and setting up the map 
 	// for _, j := range sig.Sigs {
 	// 	set[j.Label] = 1
 	// }
 	
 	// getting teams from sig.yaml and storing it in array
-	for i, _ := range sig.Sigs {
-		if(sig.Sigs[i].Contact.GithubTeams == nil){
-			continue;
-		}
-		for j, _ := range sig.Sigs[i].Contact.GithubTeams {
-			log.Println(sig.Sigs[i].Contact.GithubTeams[j].Name)
+	 for i, _ := range sig.Sigs {
+	 	if(sig.Sigs[i].Contact.GithubTeams == nil){
+	 		continue;
+	 	}
+	 	for j, _ := range sig.Sigs[i].Contact.GithubTeams {
+			setTeam[sig.Sigs[i].Contact.GithubTeams[j].Name] = 1
+	 	}
+	 }
+
+	// getting the teams from teams.yaml and addin
+	for keys, _ := range teams.Teams {
+		if setTeam[keys] == 1{
+			delete(setTeam, keys)
 		}
 	}
 
-	 
+
 	// getting the labels from label.yaml and adding it to a array
 	 for _, s := range labelsYAML.Default.Labels {
 		var check = s.Name
@@ -79,6 +87,7 @@ func main() {
 
 	// logging the final set which is the difference in both the file 
 	log.Println(set)
+	log.Println(setTeam)
 		
 
 	// traverse through sigs,wgs..... and append respective labels to label[]

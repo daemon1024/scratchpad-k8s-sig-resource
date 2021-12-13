@@ -1,0 +1,52 @@
+teams:
+  sig-api-machinery-api-reviews:
+    description: ""
+    members:
+    - lavalamp
+    - liggitt
+    privacy: closed
+  sig-api-machinery-bugs:
+    description: ""
+    members:
+    - lavalamp
+    privacy: closed
+  sig-api-machinery-feature-requests:
+    description: ""
+    members:
+    - lavalamp
+    - liggitt
+    privacy: closed
+  sig-api-machinery-misc:
+    description: Use only if you can't figure out a better category
+    members:
+    - deads2k
+    - derekwaynecarr
+    - enj
+    - ironcladlou
+    - lavalamp
+    - liggitt
+    - smarterclayton
+    - soltysh
+    - sttts
+    - yue9944882
+    privacy: closed
+  sig-api-machinery-pr-reviews:
+    description: ""
+    members:
+    - deads2k
+    - lavalamp
+    - liggitt
+    - smarterclayton
+    - sttts
+    privacy: closed
+  sig-api-machinery-proposals:
+    description: ""
+    members:
+    - lavalamp
+    - liggitt
+    privacy: closed
+  sig-api-machinery-test-failures:
+    description: ""
+    members:
+    - lavalamp
+    privacy: closed

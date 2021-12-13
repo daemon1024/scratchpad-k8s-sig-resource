@@ -185,10 +185,12 @@ type Context struct {
 
 // Team is the list it contains
 type Team struct {
-
+	Description string 
+	Members 	[]string	`yaml:"members"`
+	Privacy 	string
 }
 
 // TeamList is the struct for teams in various sig folders and its teams.yaml file
 type TeamList struct {
-	Teams		   []Team
+	Teams		   map[string]Team	`yaml:"teams"`
 }

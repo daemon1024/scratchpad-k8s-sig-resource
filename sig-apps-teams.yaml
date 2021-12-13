@@ -1,0 +1,118 @@
+teams:
+  sig-apps-api-reviews:
+    description: ""
+    members:
+    - davidopp
+    - dixudx
+    - enisoc
+    - foxish
+    - janetkuo
+    - kow3ns
+    - lukaszo
+    - mattfarina
+    - mfojtik
+    - smarterclayton
+    - soltysh
+    - tnozicka
+    - zouyee
+    privacy: closed
+  sig-apps-bugs:
+    description: ""
+    members:
+    - davidopp
+    - enisoc
+    - foxish
+    - janetkuo
+    - kow3ns
+    - lukaszo
+    - mattfarina
+    - mfojtik
+    - resouer
+    - smarterclayton
+    - soltysh
+    - tnozicka
+    - wanghaoran1988
+    privacy: closed
+  sig-apps-feature-requests:
+    description: ""
+    members:
+    - ant31
+    - davidopp
+    - enisoc
+    - foxish
+    - janetkuo
+    - kow3ns
+    - lukaszo
+    - mattfarina
+    - mfojtik
+    - prydonius
+    - resouer
+    - smarterclayton
+    - soltysh
+    - tnozicka
+    privacy: closed
+  sig-apps-misc:
+    description: Use only if you can't figure out a better category
+    members:
+    - davidopp
+    - enisoc
+    - foxish
+    - janetkuo
+    - kow3ns
+    - lukaszo
+    - mattfarina
+    - mfojtik
+    - prydonius
+    - resouer
+    - smarterclayton
+    - soltysh
+    - tnozicka
+    privacy: closed
+  sig-apps-pr-reviews:
+    description: ""
+    members:
+    - davidopp
+    - enisoc
+    - foxish
+    - janetkuo
+    - kow3ns
+    - lukaszo
+    - mattfarina
+    - mfojtik
+    - resouer
+    - smarterclayton
+    - soltysh
+    - tnozicka
+    privacy: closed
+  sig-apps-proposals:
+    description: ""
+    members:
+    - davidopp
+    - enisoc
+    - foxish
+    - janetkuo
+    - kow3ns
+    - lukaszo
+    - mattfarina
+    - mfojtik
+    - prydonius
+    - smarterclayton
+    - soltysh
+    - tnozicka
+    privacy: closed
+  sig-apps-test-failures:
+    description: ""
+    members:
+    - davidopp
+    - enisoc
+    - foxish
+    - janetkuo
+    - kow3ns
+    - lukaszo
+    - mattfarina
+    - mfojtik
+    - prydonius
+    - smarterclayton
+    - soltysh
+    - tnozicka
+    privacy: closed
